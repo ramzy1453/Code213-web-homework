@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(22, 65, 141);
+  height: 48px;
+  align-items: center;
+  padding-left: 8px;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+nav .links-container {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav .nav-title {
+  font-size: 1.3em;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+nav .links-container .nav-link {
+  list-style: none;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 8px;
+  cursor: pointer;
+}
+
+nav .links-container .nav-link:hover {
+  background-color: rgb(38, 96, 197);
+}
+
+.link-parent {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: rgb(22, 65, 141);
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  width: 200px;
+}
+
+.dropdown-menu .dropdown-item {
+  list-style: none;
+  padding: 8px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: rgb(38, 96, 197);
+}
