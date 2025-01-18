@@ -35,6 +35,22 @@ nav .links-container .nav-link {
   align-items: center;
   padding: 0 8px;
   cursor: pointer;
+  position: relative;
+}
+
+.nav-link::before {
+  content: "";
+  background-color: blue;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 4px;
+  width: 0%;
+  transition: 1s ease all;
+}
+
+.nav-link:hover::before {
+  width: 100%;
 }
 
 nav .links-container .nav-link:hover {
@@ -74,6 +90,8 @@ nav .links-container .nav-link:hover {
 .icon-container {
   position: relative;
 }
+
+/********************** HAMBURGER ***************************/
 
 .responsive-navbar-dropdown {
   position: absolute;
