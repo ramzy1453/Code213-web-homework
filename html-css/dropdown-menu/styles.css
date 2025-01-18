@@ -19,7 +19,9 @@ nav .links-container {
   margin: 0;
   padding: 0;
 }
-
+nav .icon-container {
+  display: none;
+}
 nav .nav-title {
   font-size: 1.3em;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -52,6 +54,7 @@ nav .links-container .nav-link:hover {
   padding: 0;
   cursor: pointer;
   width: 200px;
+  display: none;
 }
 
 .dropdown-menu .dropdown-item {
@@ -62,4 +65,44 @@ nav .links-container .nav-link:hover {
 
 .dropdown-menu .dropdown-item:hover {
   background-color: rgb(38, 96, 197);
+}
+
+.nav-link:hover ~ .dropdown-menu {
+  display: block;
+}
+
+.icon-container {
+  position: relative;
+}
+
+.responsive-navbar-dropdown {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  background-color: rgb(22, 65, 141);
+  padding: 0;
+  margin: 0;
+  display: none;
+}
+.responsive-navbar-dropdown-item {
+  list-style: none;
+  padding: 8px 16px;
+}
+
+.responsive-navbar-dropdown-item:hover {
+  background-color: rgb(38, 96, 197);
+}
+
+svg:hover ~ .responsive-navbar-dropdown {
+  display: block;
+}
+
+@media screen and (max-width: 400px) {
+  nav .links-container {
+    display: none;
+  }
+
+  nav .icon-container {
+    display: block;
+  }
 }
