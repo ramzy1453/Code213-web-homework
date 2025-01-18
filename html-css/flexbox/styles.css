@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.root {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.root > .header {
+  background-color: purple;
+  padding: 12px;
+  text-align: center;
+}
+
+.root > .header > .title {
+  color: white;
+  font-size: 48px;
+}
+
+.root > .three-boxes {
+  border: 3px black solid;
+  display: flex;
+  flex-direction: row;
+}
+
+.root > .three-boxes > .box {
+  background-color: cyan;
+  padding: 12px;
+  margin: 12px;
+}
+
+.root > .three-boxes > .box > .buttons-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.root > .three-boxes > .box > .blush-container {
+  display: flex;
+  justify-content: center;
+}
+
+.blush-button {
+  margin: 8px;
+  width: 50%;
+}
+.buttons-container > button {
+  margin: 8px;
+  width: 25%;
+}

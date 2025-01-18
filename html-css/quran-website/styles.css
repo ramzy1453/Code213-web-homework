@@ -1,0 +1,309 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 84px;
+}
+
+nav > .links-container {
+}
+
+nav .nav-link {
+  /* margin: 0 8px; */
+  margin-left: 8px;
+  margin-right: 8px;
+  color: #20a36c;
+  padding: 4px;
+  text-decoration: none;
+  font-size: 18px;
+  border: 2px solid transparent;
+}
+
+nav .nav-link:hover {
+  border: 2px solid #20a36c;
+}
+
+nav .sign-in-button {
+  border: 1px black solid;
+  padding: 8px 16px;
+  background-color: transparent;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.4s ease all;
+}
+
+nav > .sign-in-button:hover {
+  background-color: rgb(203, 205, 207);
+}
+
+#hero {
+  background-color: rgba(245, 249, 252, 1);
+  display: flex;
+  flex-direction: row;
+  padding: 80px 60px;
+}
+#hero > .hero-left-side {
+  flex: 2;
+  border: 2px red solid;
+}
+.title {
+  font-weight: 700;
+  font-size: 48px;
+  color: rgba(55, 55, 77, 1);
+  text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2);
+}
+#hero > .hero-left-side > .description {
+  font-weight: 300;
+  font-size: 16px;
+  color: rgba(77, 75, 75, 1);
+}
+#hero > .hero-left-side > .buttons-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 16px;
+}
+
+#hero > .hero-left-side > .buttons-container > .read-button {
+  background: linear-gradient(90deg, #20a36c 8.64%, #52e6a7 95.76%);
+  padding: 12px 16px;
+  border-radius: 4px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  margin-right: 24px;
+  cursor: pointer;
+}
+#hero > .hero-left-side > .buttons-container > .audio-button {
+  padding: 12px 16px;
+  border-radius: 4px;
+  font-size: 20px;
+  font-weight: bold;
+  border: 1px solid rgba(126, 126, 126, 1);
+  cursor: pointer;
+}
+
+#hero > .hero-right-side {
+  flex: 1;
+  border: 2px black solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#about {
+  display: flex;
+  flex-direction: row;
+}
+#about > .image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 9999px;
+  background: linear-gradient(90deg, #20a36c 2.52%, #52e5a7 100%);
+  padding: 16px;
+  margin: 32px;
+}
+
+#about > .about-right-side {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#about > .about-right-side > .description {
+  font-weight: 300;
+  font-size: 24px;
+  text-align: center;
+  color: rgba(77, 75, 75, 1);
+  margin-bottom: 16px;
+}
+
+.primary-button {
+  padding: 12px 16px;
+  border-radius: 4px;
+  font-size: 20px;
+  font-weight: bold;
+  border: 1px solid #20a36c;
+}
+
+#sourates {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#sourates > .input-container-sourate > input {
+  border: 1px #20a36c solid;
+  border-radius: 4px;
+  padding: 8px 8px;
+  width: 300px;
+  margin: 32px 0;
+}
+
+.sourates-container {
+  display: flex;
+  flex-direction: column;
+  margin: 16px 0;
+}
+.sourates-container > .sourate-line {
+  display: flex;
+  flex-direction: row;
+}
+.sourates-container > .sourate-line > .sourate-box {
+  border: 1px #7e7e7e solid;
+  display: flex;
+  flex-direction: row;
+  padding: 8px 16px;
+  margin: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.sourates-container > .sourate-line > .sourate-box:hover {
+  background: linear-gradient(90deg, #22a66e -1.91%, #4ee0a3 101.44%);
+  color: white;
+}
+
+.sourate-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 32px;
+}
+.sourate-left > .number {
+  background-color: gray;
+  color: white;
+  width: 48px;
+  height: 48px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+
+#blogs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#blogs > .blogs-container {
+  display: flex;
+  flex-direction: row;
+  margin: 32px;
+}
+
+#blogs > .blogs-container > .blog-box {
+  margin: 16px;
+}
+
+#blogs > .blogs-container > .blog-box > img {
+  width: 100%;
+  height: 240px;
+}
+
+.blogs-container > .blog-box > .blog-body > .read-blog-link {
+  text-decoration: none;
+  color: #20a36c;
+  font-size: 18px;
+}
+
+footer {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(55, 55, 77, 1);
+  padding: 32px;
+}
+footer > .footer-left-side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  margin: 0px 24px;
+}
+
+footer > .footer-left-side > .icons-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+footer > .footer-left-side > .icons-container > img {
+}
+
+footer > .footer-right-side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+footer > .footer-right-side > form {
+  background-color: white;
+  border-radius: 12px;
+  padding: 8px;
+  display: flex;
+  width: 70%;
+  flex-direction: column;
+}
+
+.footer-right-side > form > input,
+.footer-right-side > form > textarea {
+  margin: 8px;
+  padding: 8px 8px;
+  border-radius: 8px;
+  background-color: rgba(55, 55, 77, 1);
+  border: none;
+  outline: none;
+  color: white;
+}
+
+.footer-right-side > form > textarea {
+  resize: none;
+  height: 100px;
+}
+
+::placeholder {
+  color: white;
+}
+
+.footer-right-side > form > button {
+  margin: 8px;
+  padding: 8px 8px;
+  border-radius: 8px;
+  background-color: rgba(73, 217, 157, 1);
+  border: none;
+  outline: none;
+  color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.input-container-sourate {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 16px 0;
+  position: relative;
+}
+#sourates > .input-container-sourate > img {
+  position: absolute;
+  right: 2px;
+  top: 50%;
+  transform: translateY(-50%);
+}

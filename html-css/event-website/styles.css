@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.root {
+  display: flex;
+  flex-direction: row;
+}
+
+.root > .left-side {
+  flex: 1;
+  border: 1px brown solid;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Flag_of_Algeria.svg/2560px-Flag_of_Algeria.svg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-side > .event-description {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  margin: 24px;
+  padding: 12px;
+  border-radius: 8px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.root > .right-side {
+  border: 1px green solid;
+  flex: 1;
+  overflow: scroll;
+  height: 100vh;
+}
+
+.event-box {
+  display: flex;
+  flex-direction: row;
+  border: 1px black solid;
+  margin: 16px;
+}
+
+.event-box > .event-date {
+  background-color: brown;
+  color: white;
+  padding: 6px;
+  flex: 1;
+  margin-right: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.event-box > .event-infos {
+  flex: 3;
+  padding-bottom: 16px;
+}

@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.root {
+}
+
+.root > .header {
+  background-color: gray;
+  color: white;
+  padding: 8px 8px 32px 8px;
+}
+
+.header > .title {
+  margin: 0;
+}
+.header > .sub-title {
+  margin: 0;
+}
+
+.root > .page-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.page-content > .sidebar {
+  display: flex;
+  flex-direction: column;
+  border: 1px black solid;
+  background-color: aquamarine;
+  flex: 1;
+  height: 85vh;
+}
+
+.page-content > .box {
+  flex: 4;
+  overflow: scroll;
+  height: 85vh;
+  padding: 8px 16px;
+}
+
+.page-content > .sidebar > .link {
+  background-color: yellow;
+  margin: 4px;
+  padding: 4px;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+
+.box > .title {
+  background-color: aliceblue;
+  border-bottom: 4px green solid;
+}
+
+.box > .description {
+  border: 1px green solid;
+  padding: 4px;
+  border-radius: 8px;
+}
+
+.key-words {
+  color: red;
+  font-weight: bold;
+}
