@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.main-container {
+  display: flex;
+  height: 100vh;
+}
+
+.left-side {
+  flex: 1;
+  padding: 12px;
+}
+
+.left-side form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: auto;
+}
+
+.left-side form img {
+  width: 150px;
+}
+
+.right-side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+@media screen and (max-width: 900px) {
+  .right-side {
+    display: none;
+  }
+
+  .main-container {
+    justify-content: center;
+    align-items: center;
+  }
+}
