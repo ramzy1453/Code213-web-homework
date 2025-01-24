@@ -29,6 +29,16 @@ let division = a / b;
 let modulo = a % b;
 
 console.log(`la somme de ${a} et ${b} est ${sum}`);
+// Afectation de variables et incrémentation
+let monAge = 22;
+
+console.log(monAge);
+
+// monAge = monAge + 1;
+// monAge += 1;
+monAge++;
+
+console.log(monAge);
 
 // Mini exercice : Demander à l'utilisateur de saisir son prénom et son nom, puis afficher un message de bienvenue
 
@@ -40,7 +50,7 @@ let fullName = firstName + " " + lastName;
 console.log(`Hello and welcome, ${fullName}`);
 
 // 7 - Les conditions
-let age = 11;
+let age = prompt("Enter your age");
 
 if (age > 0 && age < 10) {
   console.log("You are a child");
@@ -57,3 +67,39 @@ if (age === 26) {
 }
 
 // 8 - Opérateurs logiques : (>), (<), (>=), (<=), (===), (!=), (&&), (||)
+
+// Mini exercice : mini Calcutatrice
+console.log(
+  "Hello and welcome in the mini calculator, please choose one operation:"
+);
+console.log("1 - Addition");
+console.log("2 - Soustraction");
+console.log("3 - Multiplication");
+console.log("4 - Division");
+console.log("5 - Modulo");
+
+let choice = prompt("Enter your choice");
+
+let A = prompt("Enter the first number");
+let B = prompt("Enter the second number");
+
+if (choice === "1") {
+  console.log(`The sum of ${a} and ${b} is ${Number(A) + Number(B)}`);
+} else if (choice === "2") {
+  console.log(`The substraction of ${a} and ${b} is ${Number(A) - Number(B)}`);
+}
+
+// 9 - Les boucles
+
+let compteur = 1;
+while (compteur <= 10) {
+  console.log("lan o3id lkalam fil 9ismi");
+  compteur++;
+}
+
+console.log("boucle khlaset");
+
+let password = prompt("Enter your password");
+while (password !== "123456") {
+  password = prompt("Wrong!, Enter the password");
+}
