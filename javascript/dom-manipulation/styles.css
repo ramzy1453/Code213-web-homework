@@ -1,12 +1,15 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: goldenrod;
-  color: black;
 }
 
-.myClass {
-  color: red;
-  background-color: green;
-  font-size: 20px;
+.dark-mode {
+  background-color: black;
+  color: white;
+  border: 4px white solid;
+}
+.light-mode {
+  background-color: white;
+  color: black;
+  border: 4px black solid;
 }
