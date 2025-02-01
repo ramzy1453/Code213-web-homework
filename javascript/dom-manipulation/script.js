@@ -3,8 +3,6 @@
 // 1.1 Get Element By Id
 let usernameElement = document.getElementById("username");
 
-usernameElement.textContent = "Racim";
-
 // Get Element by Class
 let inputs = document.getElementsByClassName("number-input");
 
@@ -18,6 +16,7 @@ paragraphs[1].textContent = "Alaykom";
 // Get Element by Query Selector
 
 let spanElement = document.querySelector("body > h1 > span");
+spanElement.textContent = "Wassim";
 
 // 1.2 - Accessing to the inner HTML code
 
@@ -50,7 +49,7 @@ spanElement.classList.add("myClass"); // add a new class
 spanElement.classList.remove("myClass"); // remove a class
 
 // 1.5 - removing HTML Element
-image.remove();
+// image.remove();
 
 // 2 - Events (click button, hover on mouse, press keyboard, scroll ext...)
 
