@@ -1,0 +1,29 @@
+.box {
+  border-radius: 20px;
+  background: #8e8dd3;
+  box-shadow: 26px 26px 52px #403f5f, -26px -26px 52px #dcdbff;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.line {
+  display: flex;
+  flex-direction: row;
+}
+body {
+  background-image: url(https://cdn.discordapp.com/attachments/1320086962991923342/1335266239152525462/8-bit-wallpaper-gif-11.gif?ex=679f8b17&is=679e3997&hm=62321af61a0762cbe650a7d4b04387217bd2af173d17bcf50e413a1448de6fe5&);
+  background-repeat: no-repeat;
+  background-size: cover;
+}

@@ -1,0 +1,49 @@
+#parent-calculator {
+  margin-top: 42px;
+}
+.box-container {
+  border: 2px solid black;
+  max-width: 400px;
+  margin: auto;
+}
+.box-container > .resultat {
+  border-bottom: 2px black solid;
+  text-align: end;
+  height: 48px;
+  font-size: 32px;
+  padding: 8px;
+  background-color: rgba(43, 41, 41, 0.269);
+}
+.box-container > .number-container {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  background-color: rgb(165, 197, 236);
+}
+.box-container > .number-container > .number {
+  border: 1px solid rgb(255, 41, 41);
+  text-align: center;
+  padding: 12px;
+  margin: 10px;
+  border-radius: 4px;
+  background-color: rgb(98, 154, 243);
+  color: white;
+  cursor: pointer;
+}
+#c {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  text-align: center;
+  background-color: cadetblue;
+  color: white;
+}
+#zero {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  text-align: center;
+  background-color: rgb(98, 154, 243);
+  color: white;
+}
+#equewal {
+  background-color: rgb(18, 224, 18);
+  color: white;
+}
