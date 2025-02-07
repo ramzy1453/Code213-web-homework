@@ -10,15 +10,20 @@ body {
   padding: 12px;
 }
 
-nav {
-  display: flex;
-  justify-content: space-between;
-}
-
-nav ul {
+#hero {
   display: flex;
 }
 
-nav ul li {
-  margin: 0 8px;
+#results .results-list .result {
+  border: 2px black solid;
+}
+
+.grid-box {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 8px;
+}
+
+.grid-box .box {
+  background-color: aquamarine;
 }
