@@ -8,4 +8,6 @@ body {
 .App .todos {
   display: grid;
   grid-template-columns: repeat(3 auto);
+  border: 1px red solid;
+  margin: 24px;
 }
