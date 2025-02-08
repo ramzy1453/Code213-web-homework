@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.App {
+}
+
+.App .todos {
+  display: grid;
+  grid-template-columns: repeat(3 auto);
+}
