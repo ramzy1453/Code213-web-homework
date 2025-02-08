@@ -30,7 +30,6 @@ buttonEl.addEventListener("click", function whenClick() {
   });
 
   X.addEventListener("click", function whenClickOnDelete() {
-    console.log(X);
     newDiv.remove();
     counter--;
     sizeItemsEl.textContent = counter;

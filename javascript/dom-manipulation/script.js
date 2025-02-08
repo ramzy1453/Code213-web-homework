@@ -24,8 +24,6 @@ let ul = document.querySelector("ul");
 
 ul.innerHTML += `
 
-<li>C</li>
-<li>C++</li>
 <li>Java</li>
 
 `;
@@ -38,10 +36,10 @@ let image = document.querySelector("img");
 image.setAttribute("width", "300");
 
 // 1.4 - Modify CSS Properties
-// spanElement.style.color = "blue";
-// spanElement.style.backgroundColor = "red";
-// spanElement.style.border = "2px solid black";
-// spanElement.style.fontSize = "20px";
+spanElement.style.color = "blue";
+spanElement.style.backgroundColor = "red";
+spanElement.style.border = "2px solid black";
+spanElement.style.fontSize = "20px";
 
 // Alternative way
 spanElement.classList.add("myClass"); // add a new class
