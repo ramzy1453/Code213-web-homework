@@ -1,0 +1,50 @@
+#hero {
+  display: flex;
+  flex-direction: row;
+}
+
+#hero .left-hero {
+  padding: 16px;
+  flex: 1;
+}
+
+#hero .left-hero .title {
+}
+#hero .left-hero .big-title {
+  font-size: 48px;
+}
+#hero .left-hero button {
+  font-size: 24px;
+  background-color: purple;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 8px;
+}
+
+#hero .left-hero .big-title .converse-title {
+  color: brown;
+}
+
+#hero .right-hero {
+  padding: 16px;
+  flex: 1;
+}
+
+#hero .right-hero .shoes-container {
+  display: flex;
+}
+
+#hero .right-hero .shoes-container .shoe-item {
+  border: 1px black solid;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 0 8px;
+  transition: 0.5s ease all;
+}
+
+#hero .right-hero .shoes-container .shoe-item:hover {
+  border: 1px blue solid;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
