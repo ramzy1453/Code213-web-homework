@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./Hero.css";
+import ShoeItem from "./ShoeItem";
 
 export default function Hero() {
   const [actualShoe, setActualShoe] = useState(
@@ -21,48 +22,21 @@ export default function Hero() {
       <div className="right-hero">
         <img src={actualShoe} width={500} alt="" />
         <div className="shoes-container">
-          <div
-            className="shoe-item"
-            onClick={function () {
-              setActualShoe(
-                "https://converse-store.vercel.app/assets/big-shoe2-DQX3Rp_U.png"
-              );
-            }}
-          >
-            <img
-              alt=""
-              src="https://converse-store.vercel.app/assets/big-shoe2-DQX3Rp_U.png"
-              width={200}
-            />
-          </div>
-          <div
-            className="shoe-item"
-            onClick={function () {
-              setActualShoe(
-                "https://converse-store.vercel.app/assets/big-shoe3-ncxL7lz9.png"
-              );
-            }}
-          >
-            <img
-              alt=""
-              src="https://converse-store.vercel.app/assets/big-shoe3-ncxL7lz9.png"
-              width={200}
-            />
-          </div>
-          <div
-            className="shoe-item"
-            onClick={function () {
-              setActualShoe(
-                "https://converse-store.vercel.app/assets/big-shoe1-VFPhAFde.png"
-              );
-            }}
-          >
-            <img
-              alt=""
-              src="https://converse-store.vercel.app/assets/big-shoe1-VFPhAFde.png"
-              width={200}
-            />
-          </div>
+          <ShoeItem
+            changeShoeWithProps={setActualShoe}
+            name="Adidas"
+            imageUrl="https://converse-store.vercel.app/assets/big-shoe1-VFPhAFde.png"
+          />
+          <ShoeItem
+            changeShoeWithProps={setActualShoe}
+            name="Fila"
+            imageUrl="https://converse-store.vercel.app/assets/big-shoe2-DQX3Rp_U.png"
+          />
+          <ShoeItem
+            changeShoeWithProps={setActualShoe}
+            name="Nike"
+            imageUrl="https://converse-store.vercel.app/assets/big-shoe3-ncxL7lz9.png"
+          />
         </div>
       </div>
     </section>

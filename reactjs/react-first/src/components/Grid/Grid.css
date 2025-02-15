@@ -1,0 +1,9 @@
+.grid-box {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 8px;
+}
+
+.grid-box .box {
+  background-color: aquamarine;
+}

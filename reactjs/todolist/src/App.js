@@ -4,7 +4,8 @@ import { useState } from "react";
 function App() {
   const [counter, setCounter] = useState(0);
   const [bgColor, setBgColor] = useState("white");
-  let todos = ["Salat", "Nawm", "Akl", "R9ad"];
+  // let todos = ["Salat", "Nawm", "Akl", "R9ad"];
+  const [todos, setTodos] = useState(["Salat", "Nawm", "Akl", "R9ad"]);
 
   function changeBgColor() {
     if (bgColor === "white") {
@@ -13,9 +14,11 @@ function App() {
       setBgColor("white");
     }
   }
-  function increment() {
-    setCounter(counter + 1);
+  function addTodo() {
+    // permet d'ajouter un element a la fin de la liste (Array) todos
+    setTodos([...todos, "9raya"]);
   }
+
   return (
     <div
       className="App"
@@ -26,10 +29,21 @@ function App() {
       <div className="main-container">
         <div>
           <input type="text" />
-          <button onClick={increment}>add</button>
+          <button onClick={addTodo}>add</button>
         </div>
         <main>
           <h1>Todo List</h1>
+          <button
+            onClick={function () {
+              let newListWithoutNawm = todos.filter(function (oneTodo) {
+                return oneTodo !== "Nawm";
+              });
+
+              setTodos(newListWithoutNawm);
+            }}
+          >
+            Remove Nawm
+          </button>
           <button onClick={changeBgColor}>Dark Mode</button>
           <div>Counter : {counter}</div>
           <div className="todos">

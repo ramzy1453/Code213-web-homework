@@ -42,6 +42,11 @@
   transition: 0.5s ease all;
 }
 
+#hero .right-hero .shoes-container .shoe-item .shoe-brand {
+  text-align: center;
+  font-size: 24px;
+}
+
 #hero .right-hero .shoes-container .shoe-item:hover {
   border: 1px blue solid;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,

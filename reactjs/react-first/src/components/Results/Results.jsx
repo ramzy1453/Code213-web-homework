@@ -1,5 +1,5 @@
 import ResultItem from "./ResultItem";
-
+import "./Results.css";
 function Results() {
   return (
     <section id="results">
