@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 18px 26px;
+  box-shadow: rgba(46, 4, 181, 0.19) 0px 10px 20px,
+    rgba(57, 7, 164, 0.315) 0px 6px 6px;
+}
+nav .right-text {
+  display: flex;
+  cursor: pointer;
+  margin: 8px;
+}
+nav > .left-text > p {
+  font-size: 16px;
+}
+nav > .right-text > h1 {
+  margin: 0 6px;
+}

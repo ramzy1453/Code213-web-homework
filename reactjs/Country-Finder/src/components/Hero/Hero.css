@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Ribeye&display=swap");
+#hero {
+  padding: 12px 36px;
+}
+#hero .box-container {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0px, 1fr));
+  gap: 16px;
+}
+
+#hero .link-mini-box {
+  display: flex;
+  flex-direction: column;
+  height: 372px;
+  box-shadow: rgba(46, 4, 181, 0.19) 0px 10px 20px,
+    rgba(57, 7, 164, 0.315) 0px 6px 6px;
+  cursor: pointer;
+  border-radius: 4px;
+  text-decoration: none;
+  color: black;
+}
+#hero .link-mini-box:hover {
+  transform: scale(1.06);
+  transition: 1s all ease;
+}
+#hero .link-mini-box .text {
+  padding: 12px 16px;
+}
+#hero > .box-container > .link-mini-box > img {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  object-fit: cover;
+  width: 100%;
+}
+#hero > .box-container > .link-mini-box > .text > h3 {
+  margin: 12px;
+  font-family: "Ribeye", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#hero > .box-container > .link-mini-box > .text > p > span {
+  color: rgb(145, 145, 145);
+}
+#hero > .box-container > .link-mini-box > .text > p {
+  margin: 12px 0;
+}
