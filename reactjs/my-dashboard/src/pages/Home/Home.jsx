@@ -1,5 +1,4 @@
 import AudioItem from "../../components/Audio/AudioItem";
-
 export default function Home() {
   return (
     <div
@@ -10,14 +9,6 @@ export default function Home() {
         padding: "20px",
       }}
     >
-      <AudioItem />
-      <AudioItem />
-      <AudioItem />
-      <AudioItem />
-      <AudioItem />
-      <AudioItem />
-      <AudioItem />
-      <AudioItem />
       <AudioItem />
     </div>
   );
