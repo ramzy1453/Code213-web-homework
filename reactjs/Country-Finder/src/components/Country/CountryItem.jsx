@@ -2,8 +2,8 @@ import React from "react";
 import { Link } from "react-router";
 export default function CountryItem(props) {
   return (
-    <Link to="/Country" className="link-mini-box">
-      <img src={props.flag} height={182} />
+    <Link to={`/country/${props.name}`} className="link-mini-box">
+      <img src={props.flag} height={182} alt="" />
       <div className="text">
         <h3>{props.name}</h3>
         <p>
