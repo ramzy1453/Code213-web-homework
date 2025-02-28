@@ -9,7 +9,6 @@
 .app-container {
   text-align: center;
   padding: 40px;
-  background: linear-gradient(135deg, #1e3c72, #2a5298);
   color: white;
   min-height: 100vh;
 }

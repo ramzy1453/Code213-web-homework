@@ -1,9 +1,11 @@
 import React from "react";
 import "./CustomButton.css";
+import { useStore } from "../../lib/state";
 
 const CustomButton = (props) => {
+  const setColor = useStore((state) => state.setColor);
   return (
-    <button className="icon-button">
+    <button className="icon-button" onClick={() => setColor("yellow")}>
       <svg
         width="48"
         height="48"

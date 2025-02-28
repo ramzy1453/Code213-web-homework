@@ -2,7 +2,7 @@ import React from "react";
 import "./Grid.css";
 import GridItem from "./GridItem";
 
-function Grid() {
+function Grid(props) {
   return (
     <div className="grid-container">
       <GridItem title="HTML" />
