@@ -1,3 +1,5 @@
+import "./AudioItem.css";
+
 import React from "react";
 import { useTheme } from "@mui/material/styles";
 import Box from "@mui/material/Box";
@@ -9,7 +11,7 @@ import Typography from "@mui/material/Typography";
 import SkipPreviousIcon from "@mui/icons-material/SkipPrevious";
 import PlayArrowIcon from "@mui/icons-material/PlayArrow";
 import SkipNextIcon from "@mui/icons-material/SkipNext";
-export default function AudioItem() {
+export default function AudioItem(props) {
   const theme = useTheme();
 
   return (
@@ -35,7 +37,12 @@ export default function AudioItem() {
               <SkipPreviousIcon />
             )}
           </IconButton>
-          <IconButton aria-label="play/pause">
+          <IconButton
+            aria-label="play/pause"
+            onClick={() => {
+              props.setColor("red");
+            }}
+          >
             <PlayArrowIcon sx={{ height: 38, width: 38 }} />
           </IconButton>
           <IconButton aria-label="next">
