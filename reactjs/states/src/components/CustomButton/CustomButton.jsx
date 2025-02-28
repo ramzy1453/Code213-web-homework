@@ -3,7 +3,10 @@ import "./CustomButton.css";
 import { useStore } from "../../lib/state";
 
 const CustomButton = (props) => {
-  const setColor = useStore((state) => state.setColor);
+  // const setColor = useStore((state) => state.setColor);
+  const setColor = useStore(function (state) {
+    return state.setColor;
+  });
   return (
     <button className="icon-button" onClick={() => setColor("yellow")}>
       <svg
