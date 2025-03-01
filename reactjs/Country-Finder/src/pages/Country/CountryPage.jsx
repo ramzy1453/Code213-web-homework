@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./CountryPage.css";
 import { Link, useParams } from "react-router";
+import loadingGIF from "../../assets/loading.gif";
 export default function CountryPage() {
   const params = useParams();
   const [country, setCountry] = useState({});
@@ -21,7 +22,18 @@ export default function CountryPage() {
   }, []);
 
   if (loading) {
-    return <div>Loading...</div>;
+    return (
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          height: "100vh",
+        }}
+      >
+        <img src={loadingGIF} alt="" width={200} height={200} />
+      </div>
+    );
   }
   return (
     <div className="country-info-container">
@@ -43,7 +55,7 @@ export default function CountryPage() {
         <p>Back</p>
       </Link>
       <div className="right-left-container">
-        <div className="right">
+        <div className="right" style={{ display: "flex" }}>
           <img src={country.flags.svg} width={460} height={310} alt="" />
         </div>
         <div className="left">
@@ -74,7 +86,8 @@ export default function CountryPage() {
                 Currencies :<span> Algerian dinar</span>
               </p>
               <p>
-                Languages :<span> Arabic</span>
+                Languages :
+                <span> {Object.values(country.languages).join(", ")}</span>
               </p>
             </div>
           </div>
