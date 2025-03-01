@@ -4,6 +4,7 @@ import CountryItem from "../Country/CountryItem";
 
 export default function Hero() {
   const [countries, setCountries] = useState([]);
+  const [loading, setLoading] = useState(true);
   useEffect(() => {
     console.log("starting to send the request");
 
@@ -12,25 +13,29 @@ export default function Hero() {
       .then((data) => {
         console.log("request done");
         setCountries(data);
+        setLoading(false);
       });
 
     console.log("done");
   }, []);
 
-  console.log(countries);
-  return (
-    <section id="hero">
-      <div className="box-container">
-        {countries.map((country) => (
-          <CountryItem
-            name={country.name.official}
-            population={country.population}
-            region={country.region}
-            capital={"X"}
-            flag={country.flags.svg}
-          />
-        ))}
-      </div>
-    </section>
-  );
+  if (loading) {
+    return <div>Loading...</div>;
+  } else {
+    return (
+      <section id="hero">
+        <div className="box-container">
+          {countries.map((country) => (
+            <CountryItem
+              name={country.name.official}
+              population={country.population}
+              region={country.region}
+              capital={"X"}
+              flag={country.flags.svg}
+            />
+          ))}
+        </div>
+      </section>
+    );
+  }
 }

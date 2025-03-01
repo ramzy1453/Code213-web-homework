@@ -1,9 +1,28 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./CountryPage.css";
 import { Link, useParams } from "react-router";
 export default function CountryPage() {
   const params = useParams();
+  const [country, setCountry] = useState({});
+  const [loading, setLoading] = useState(true);
 
+  useEffect(() => {
+    console.log("starting to send the request");
+
+    fetch(`https://restcountries.com/v3.1/name/${params.nameOfCountry}`)
+      .then((response) => response.json())
+      .then((data) => {
+        console.log("request done");
+        setCountry(data[0]);
+        setLoading(false);
+      });
+
+    console.log("done");
+  }, []);
+
+  if (loading) {
+    return <div>Loading...</div>;
+  }
   return (
     <div className="country-info-container">
       <Link to="/" className="btn-back">
@@ -25,25 +44,20 @@ export default function CountryPage() {
       </Link>
       <div className="right-left-container">
         <div className="right">
-          <img
-            src="https://flagcdn.com/dz.svg"
-            width={460}
-            height={310}
-            alt=""
-          />
+          <img src={country.flags.svg} width={460} height={310} alt="" />
         </div>
         <div className="left">
-          <h1>{params.nameOfCountry}</h1>
+          <h1>{country.name.official}</h1>
           <div className="information-container">
             <div className="info-right">
               <p>
-                nativeName :<span> الجزائر</span>
+                nativeName :<span> {country.name.official}</span>
               </p>
               <p>
                 Population :<span> 44,700,000</span>
               </p>
               <p>
-                Region :<span> Africa</span>
+                Region :<span> {country.continents[0]}</span>
               </p>
               <p>
                 Sub Region :<span> Northern Africa</span>
