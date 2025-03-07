@@ -21,6 +21,7 @@ export default function CountryPage() {
     console.log("done");
   }, []);
 
+  console.log(country.borders);
   if (loading) {
     return (
       <div
@@ -93,8 +94,10 @@ export default function CountryPage() {
           </div>
           <div className="border-countries">
             <h3>Border Countries:</h3>
-            <div className="item">Tunisia</div>
-            <div className="item">Morocco</div>
+
+            {country.borders &&
+              country.borders.map((b) => <div className="item">{b}</div>)}
+            {!country.borders && <div className="item">This is an Island</div>}
           </div>
         </div>
       </div>
